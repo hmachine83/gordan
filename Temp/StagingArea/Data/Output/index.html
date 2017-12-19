@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Gordon</title>
+   <script src="Build/UnityLoader.js"></script>
+    <script> var gameInstance = UnityLoader.instantiate("gameContainer", "Build/www.json");</script>
+  </head>
+  <body>
+  <a href="#" onclick="gameInstance.SendMessage('Player','moveForward')">Naprijed</a> | 
+  <a href="#" onclick="gameInstance.SendMessage('Player','turnRight')">Desno</a>  | 
+  <a href="#" onclick="gameInstance.SendMessage('Player','turnLeft')">Lijevo</a>   |  
+  <a href="#" onclick="gameInstance.SendMessage('Player','akcija')">Akcija</a> 
+  <br><br>
+    <div id="gameContainer" style="width: 800px; height: 800px; margin: auto"></div>
+  </body>
+</html>
